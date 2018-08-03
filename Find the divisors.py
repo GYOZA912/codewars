@@ -17,3 +17,9 @@ def divisors(integer):
         return '{b} is prime'.format(b=integer)
     else:
         return array
+
+    
+ #or
+
+def divisors(n):
+    return [i for i in xrange(2, n) if not n % i] or '%d is prime' % n
