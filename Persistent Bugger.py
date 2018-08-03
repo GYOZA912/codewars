@@ -2,7 +2,7 @@ def persistence(n):
     if len(str(n))==1:
         return 0
     else:
-        print(n)
+        #print(n)
         char=''.join(str(n))
         count=0
         while True:
@@ -10,14 +10,14 @@ def persistence(n):
             for i in range(len(char)):
                 #print(char[i])
                 mul=mul*int(char[i])
-                print(mul)
+                #print(mul)
             count=count+1
-            print(count)
+            #print(count)
             if len(str(mul))==1:
                 break
             else:
                 char=''.join(str(mul))
-                print(char)
+                #print(char)
         return count
 
     
